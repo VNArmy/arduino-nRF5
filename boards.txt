@@ -1090,3 +1090,45 @@ SeeedArchLink.menu.softdevice.s130.upload.maximum_size=151552
 SeeedArchLink.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
 SeeedArchLink.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_xxaa.ld
 
+DTBlow_BLE.name=DTBlow BLE
+
+DTBlow_BLE.upload.tool=sandeepmistry:openocd
+DTBlow_BLE.upload.target=nrf51
+DTBlow_BLE.upload.maximum_size=262144
+
+DTBlow_BLE.bootloader.tool=sandeepmistry:openocd
+
+DTBlow_BLE.build.mcu=cortex-m0
+DTBlow_BLE.build.f_cpu=16000000
+DTBlow_BLE.build.board=DTBLOW_BLE
+DTBlow_BLE.build.core=nRF5
+DTBlow_BLE.build.variant=DTBlow_BLE
+DTBlow_BLE.build.variant_system_lib=
+DTBlow_BLE.build.extra_flags=-DNRF51
+DTBlow_BLE.build.float_flags=
+DTBlow_BLE.build.ldscript=nrf51_{build.chip}.ld
+
+DTBlow_BLE.build.lfclk_flags=-DUSE_LFXO
+
+DTBlow_BLE.menu.chip.xxaa=16 kB RAM, 256 kB flash (xxaa)
+DTBlow_BLE.menu.chip.xxaa.build.chip=xxaa
+DTBlow_BLE.menu.chip.xxac=32 kB RAM, 256 kB flash (xxac)
+DTBlow_BLE.menu.chip.xxac.build.chip=xxac
+
+DTBlow_BLE.menu.softdevice.none=None
+DTBlow_BLE.menu.softdevice.none.softdevice=none
+DTBlow_BLE.menu.softdevice.none.softdeviceversion=
+
+DTBlow_BLE.menu.softdevice.s110=S110
+DTBlow_BLE.menu.softdevice.s110.softdevice=s110
+DTBlow_BLE.menu.softdevice.s110.softdeviceversion=8.0.0
+DTBlow_BLE.menu.softdevice.s110.upload.maximum_size=151552
+DTBlow_BLE.menu.softdevice.s110.build.extra_flags=-DNRF51 -DS110 -DNRF51_S110
+DTBlow_BLE.menu.softdevice.s110.build.ldscript=armgcc_s110_nrf51822_{build.chip}.ld
+
+DTBlow_BLE.menu.softdevice.s130=S130
+DTBlow_BLE.menu.softdevice.s130.softdevice=s130
+DTBlow_BLE.menu.softdevice.s130.softdeviceversion=2.0.1
+DTBlow_BLE.menu.softdevice.s130.upload.maximum_size=151552
+DTBlow_BLE.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
+DTBlow_BLE.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_{build.chip}.ld
